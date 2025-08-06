@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thushara Homestay - Your Gateway to Kannur Hills | Paithalmala, Palakkayam Thattu</title>
-    <meta name="description" content="Comfortable 1BHK AC homestay in Velladu, perfect base for exploring Paithalmala (15km), Palakkayam Thattu (12km) & Kuttippullu. Authentic Kerala food included. Book direct and save!">
-    <meta name="keywords" content="Kannur hills homestay, Paithalmala accommodation, Palakkayam Thattu stay, Velladu homestay, budget Kerala hill station, Western Ghats homestay">
+    <title>Thushara Homestay | Your Gateway to Kannur Hills</title>
+    <meta name="description" content="Experience authentic Kerala hills at Thushara Homestay, Velladu. Perfect base for Paithalmala, Palakkayam Thattu & Kuttippullu. Includes traditional meals from our family restaurant.">
     <style>
         * {
             margin: 0;
@@ -14,369 +13,254 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: #2c2c2c;
+            background-color: #fefefe;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 30px;
         }
         
         /* Header */
         header {
-            background: linear-gradient(135deg, #2c5530, #4a7c59);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
+            background: #fff;
+            padding: 30px 0;
+            border-bottom: 1px solid #e8e8e8;
+            text-align: center;
         }
         
         .logo h1 {
-            font-size: 1.8rem;
-            margin-bottom: 0.2rem;
+            font-size: 2.2rem;
+            color: #2d5016;
+            font-weight: normal;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
         }
         
-        .logo p {
+        .tagline {
+            color: #666;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        .section {
+            margin-bottom: 80px;
+        }
+        
+        .section h2 {
+            font-size: 1.8rem;
+            color: #2d5016;
+            margin-bottom: 25px;
+            font-weight: normal;
+        }
+        
+        .intro-text {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        /* What's Included Section */
+        .included-list {
+            background: #f9f9f7;
+            padding: 40px;
+            border-left: 4px solid #2d5016;
+            margin: 30px 0;
+        }
+        
+        .included-list h3 {
+            color: #2d5016;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .included-list ul {
+            list-style: none;
+        }
+        
+        .included-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .included-list li:before {
+            content: "–";
+            position: absolute;
+            left: 0;
+            color: #2d5016;
+            font-weight: bold;
+        }
+        
+        /* Location Benefits */
+        .location-info {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .attractions-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .attraction {
+            padding: 15px;
+            background: #f9f9f7;
+        }
+        
+        .attraction h4 {
+            color: #2d5016;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .attraction .distance {
+            color: #888;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        /* Simple Gallery */
+        .photo-gallery {
+            margin: 40px 0;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .gallery-item {
+            height: 160px;
+            background: #f0f0f0;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        /* Pricing */
+        .pricing {
+            background: #2d5016;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .pricing h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        
+        .price {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .pricing-note {
             font-size: 0.9rem;
             opacity: 0.9;
         }
         
-        .contact-info {
-            text-align: right;
-        }
-        
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: 500;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(44, 85, 48, 0.7), rgba(74, 124, 89, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234a7c59" width="1200" height="600"/><path fill="%23ffffff" fill-opacity="0.1" d="M0,300 Q300,100 600,300 T1200,300 V600 H0 Z"/></svg>');
-            background-size: cover;
-            background-position: center;
-            color: white;
+        /* Contact & Booking */
+        .contact-section {
             text-align: center;
-            padding: 80px 0;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
+            padding: 40px 0;
         }
         
-        .hero-content h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .hero-content p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .btn-primary {
-            background: #ff6b35;
-            color: white;
-        }
-        
-        .btn-secondary {
-            background: white;
-            color: #2c5530;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        /* Features Section */
-        .features {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-        
-        .features h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #2c5530;
-        }
-        
-        .features-grid {
+        .contact-methods {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: #4a7c59;
-        }
-        
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #2c5530;
-        }
-        
-        /* Attractions Section */
-        .attractions {
-            padding: 80px 0;
-        }
-        
-        .attractions h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #2c5530;
-        }
-        
-        .attractions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
+            margin-top: 30px;
         }
         
-        .attraction-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .attraction-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .attraction-image {
-            height: 200px;
-            background: linear-gradient(45deg, #4a7c59, #2c5530);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-        
-        .attraction-content {
+        .contact-method {
             padding: 25px;
+            border: 1px solid #e8e8e8;
         }
         
-        .attraction-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: #2c5530;
-        }
-        
-        .distance {
-            color: #ff6b35;
-            font-weight: bold;
-            font-size: 0.9rem;
+        .contact-method h4 {
+            color: #2d5016;
             margin-bottom: 15px;
         }
         
-        /* Restaurant Section */
-        .restaurant {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-        
-        .restaurant-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .restaurant-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #2c5530;
-        }
-        
-        .restaurant-text p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            color: #666;
-        }
-        
-        .restaurant-highlight {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #ff6b35;
-        }
-        
-        .restaurant-image {
-            height: 300px;
-            background: linear-gradient(45deg, #ff6b35, #ff8c42);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
+        .contact-method a {
+            color: #2d5016;
+            text-decoration: none;
             font-weight: bold;
         }
         
-        /* Booking Section */
-        .booking {
-            padding: 80px 0;
-            background: #2c5530;
-            color: white;
-            text-align: center;
-        }
-        
-        .booking h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .booking p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .booking-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 3rem;
-        }
-        
-        .booking-card {
-            background: rgba(255,255,255,0.1);
-            padding: 25px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .booking-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #ff6b35;
+        .contact-method a:hover {
+            text-decoration: underline;
         }
         
         /* Footer */
         footer {
-            background: #1a3a1f;
-            color: white;
-            padding: 40px 0 20px;
+            background: #f9f9f7;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #e8e8e8;
+            color: #666;
         }
         
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+        .footer-address {
             margin-bottom: 20px;
         }
         
-        .footer-section h3 {
-            margin-bottom: 15px;
-            color: #ff6b35;
+        .footer-note {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #888;
         }
         
-        .footer-section p, .footer-section a {
-            color: #ccc;
-            text-decoration: none;
-            line-height: 1.8;
-        }
-        
-        .footer-section a:hover {
-            color: white;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-            color: #999;
-        }
-        
-        /* Mobile Responsiveness */
+        /* Mobile Responsive */
         @media (max-width: 768px) {
-            .hero-content h2 {
-                font-size: 2rem;
+            .container {
+                padding: 0 20px;
             }
             
-            .hero-content p {
-                font-size: 1.1rem;
+            .logo h1 {
+                font-size: 1.8rem;
             }
             
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .restaurant-content {
+            .attractions-list {
                 grid-template-columns: 1fr;
             }
             
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 15px;
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
             }
             
-            .contact-info {
-                text-align: center;
+            .main-content {
+                padding: 40px 0;
             }
             
-            .contact-info a {
-                margin: 0 10px;
+            .section {
+                margin-bottom: 60px;
             }
         }
     </style>
@@ -384,195 +268,136 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1>Thushara Homestay</h1>
-                    <p>Your Gateway to Kannur Hills</p>
-                </div>
-                <div class="contact-info">
-                    <a href="tel:+918330094302">📞 +91 8330094302</a>
-                    <a href="https://wa.me/918330094302">💬 WhatsApp</a>
-                </div>
+            <div class="logo">
+                <h1>Thushara Homestay</h1>
+                <p class="tagline">Experience the authentic Kerala hills</p>
             </div>
         </div>
     </header>
 
-    <section class="hero">
+    <main class="main-content">
         <div class="container">
-            <div class="hero-content">
-                <h2>Experience Authentic Kerala Hills</h2>
-                <p>Comfortable 1BHK AC homestay perfectly located for exploring Paithalmala, Palakkayam Thattu & Kuttippullu. Authentic Kerala cuisine from our family-run restaurant below!</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/918330094302?text=Hi! I'd like to book Thushara Homestay for my Kannur hills trip" class="btn btn-primary">Book Now - ₹2000/night</a>
-                    <a href="#attractions" class="btn btn-secondary">Explore Attractions</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <h2>Why Choose Thushara Homestay?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏔️</div>
-                    <h3>Perfect Location</h3>
-                    <p>Strategic base in Velladu for all major Kannur hill attractions. Easy access to Paithalmala, Palakkayam Thattu, and hidden gems.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">❄️</div>
-                    <h3>Comfortable Stay</h3>
-                    <p>1BHK with AC, attached bathroom, kitchenette, and living area. All modern amenities for a relaxing mountain getaway.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🍽️</div>
-                    <h3>Authentic Food</h3>
-                    <p>Traditional Kerala meals from our women-run restaurant downstairs. Experience genuine local flavors and hospitality.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Great Value</h3>
-                    <p>Just ₹2000 per night for 2 people. Free parking, 24/7 security, and personalized local guidance included.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚗</div>
-                    <h3>Easy Access</h3>
-                    <p>Well-connected location with free parking. Kannur Airport 40km, Railway Station 45km. Local transport available.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
-                    <h3>Family Friendly</h3>
-                    <p>Safe, clean, and welcoming environment. Perfect for couples, families, and solo travelers exploring Kerala's hills.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="attractions" class="attractions">
-        <div class="container">
-            <h2>Explore Kannur's Hidden Gems</h2>
-            <div class="attractions-grid">
-                <div class="attraction-card">
-                    <div class="attraction-image">🌄 Paithalmala Peak</div>
-                    <div class="attraction-content">
-                        <h3>Paithalmala Hill Station</h3>
-                        <div class="distance">📍 Just 15km away</div>
-                        <p>Kerala's stunning hill station with breathtaking sunrise views, trekking trails, and cool mountain air. Perfect for nature photography and peaceful retreats.</p>
-                    </div>
-                </div>
-                <div class="attraction-card">
-                    <div class="attraction-image">🌾 Grassland Plateau</div>
-                    <div class="attraction-content">
-                        <h3>Palakkayam Thattu</h3>
-                        <div class="distance">📍 12km from homestay</div>
-                        <p>Scenic grassland plateau at 3500ft altitude. Famous for its rolling meadows, misty mornings, and spectacular valley views. Paradise for hikers!</p>
-                    </div>
-                </div>
-                <div class="attraction-card">
-                    <div class="attraction-image">💧 Natural Waterfall</div>
-                    <div class="attraction-content">
-                        <h3>Kuttippullu Waterfalls</h3>
-                        <div class="distance">📍 20km scenic drive</div>
-                        <p>Hidden pristine waterfalls surrounded by dense forests. Perfect spot for nature lovers, photography, and refreshing dips in natural pools.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="restaurant">
-        <div class="container">
-            <div class="restaurant-content">
-                <div class="restaurant-text">
-                    <h2>Authentic Kerala Cuisine</h2>
-                    <p>Experience genuine Kerala flavors right at your doorstep! Our ground-floor restaurant is proudly run by local women, serving traditional dishes made with fresh, local ingredients.</p>
-                    <div class="restaurant-highlight">
-                        <strong>🌟 Special Features:</strong><br>
-                        • Fresh seafood from nearby coast<br>
-                        • Organic spices and vegetables<br>
-                        • Traditional cooking methods<br>
-                        • Vegetarian & non-vegetarian options<br>
-                        • Home-style breakfast, lunch & dinner
-                    </div>
-                    <p><em>Supporting local women entrepreneurs while treating your taste buds!</em></p>
-                </div>
-                <div class="restaurant-image">
-                    🍛 Kerala Kitchen<br>Traditional Flavors
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="booking">
-        <div class="container">
-            <h2>Ready for Your Hill Station Adventure?</h2>
-            <p>Book directly with us and save on platform commissions! Quick response, personalized service, and local insights included.</p>
             
-            <div class="booking-info">
-                <div class="booking-card">
-                    <h3>💸 Best Price</h3>
-                    <p>₹2000/night for 2 people<br>
-                    No hidden charges<br>
-                    Free parking included</p>
+            <!-- Introduction -->
+            <section class="section">
+                <p class="intro-text">
+                    Get a taste of authentic Kerala hill life! Stay in our comfortable 1BHK homestay, 
+                    enjoy fresh meals from Vanitha Hotel (women-run restaurant attached to our homestay), and explore the stunning Western Ghats from your doorstep.
+                </p>
+                
+                <div class="included-list">
+                    <h3>Your stay includes:</h3>
+                    <ul>
+                        <li>Independent 1BHK with AC, living room, kitchenette and private bathroom</li>
+                        <li>Comfortable accommodation for up to 2 adults</li>
+                        <li>Traditional Kerala meals available from Vanitha Hotel (women's group restaurant) attached to homestay</li>
+                        <li>Free parking in safe, prime residential area</li>
+                        <li>Local guidance for hill station exploration</li>
+                        <li>Easy access to all major Kannur hill attractions</li>
+                    </ul>
                 </div>
-                <div class="booking-card">
-                    <h3>📱 Easy Booking</h3>
-                    <p>WhatsApp us directly<br>
-                    Quick confirmation<br>
-                    Flexible payment options</p>
+            </section>
+
+            <!-- Location Benefits -->
+            <section class="section">
+                <h2>Perfect Base for Hill Station Exploration</h2>
+                <div class="location-info">
+                    <p>Located on Karuvanchal - Velladu Road, we're strategically positioned in a safe, calm residential area with easy access to all major attractions in the Kannur hills region.</p>
+                    
+                    <div class="attractions-list">
+                        <div class="attraction">
+                            <h4>Paithalmala</h4>
+                            <p class="distance">15 km - Sunrise views & trekking</p>
+                        </div>
+                        <div class="attraction">
+                            <h4>Palakkayam Thattu</h4>
+                            <p class="distance">8 km - Grassland plateau at 3500ft</p>
+                        </div>
+                        <div class="attraction">
+                            <h4>Kuttippullu</h4>
+                            <p class="distance">8 km - Hidden waterfalls</p>
+                        </div>
+                        <div class="attraction">
+                            <h4>Kannur Airport</h4>
+                            <p class="distance">40 km - Easy connectivity</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="booking-card">
-                    <h3>🎯 Local Expertise</h3>
-                    <p>Best times to visit attractions<br>
-                    Transport arrangements<br>
-                    Hidden gem recommendations</p>
+            </section>
+
+            <!-- Simple Photo Gallery -->
+            <section class="section photo-gallery">
+                <h2>A Glimpse of Our Homestay</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">Comfortable AC Bedroom</div>
+                    <div class="gallery-item">Living Area & Kitchenette</div>
+                    <div class="gallery-item">Vanitha Hotel Restaurant</div>
+                    <div class="gallery-item">Kerala Cuisine</div>
+                    <div class="gallery-item">Mountain Views</div>
+                    <div class="gallery-item">Local Attractions</div>
                 </div>
+                <p style="text-align: center; margin-top: 20px; color: #666; font-style: italic;">
+                    More photos available upon request via WhatsApp
+                </p>
+            </section>
+
+            <!-- Pricing -->
+            <div class="pricing">
+                <h3>Simple, Transparent Pricing</h3>
+                <div class="price">₹2,000</div>
+                <p class="pricing-note">Per night for 2 people | Meals available separately</p>
             </div>
-            
-            <div class="cta-buttons">
-                <a href="https://wa.me/919876543210?text=Hi! I'd like to book Thushara Homestay. Please share availability and details." class="btn btn-primary">Book via WhatsApp</a>
-                <a href="tel:+918330094302" class="btn btn-secondary">Call Now</a>
-            </div>
+
+            <!-- Contact & Booking -->
+            <section class="section contact-section">
+                <h2>Ready to Experience Kerala Hills?</h2>
+                <p>Book directly with us for personalized service and local insights.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h4>WhatsApp Booking</h4>
+                        <a href="https://wa.me/918330094302?text=Hi! I'd like to book Thushara Homestay for exploring Kannur hills">
+                            Message Us: +91 83300 94302
+                        </a>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
+                            Quick response & easy booking
+                        </p>
+                    </div>
+                    <div class="contact-method">
+                        <h4>Call Direct</h4>
+                        <a href="tel:+918330094302">+91 83300 94302</a>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
+                            Speak with family directly
+                        </p>
+                    </div>
+                    <div class="contact-method">
+                        <h4>Email Inquiry</h4>
+                        <a href="mailto:info@kannurhillshomestay.com">info@kannurhillshomestay.com</a>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
+                            Detailed information & planning
+                        </p>
+                    </div>
+                </div>
+            </section>
+
         </div>
-    </section>
+    </main>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>📧 info@kannurhillshomestay.com</p>
-                    <p>📞 +91 8330094302</p>
-                    <p>📍 Velladu Village, Kannur District<br>Kerala 670571</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <p><a href="#attractions">Local Attractions</a></p>
-                    <p><a href="#booking">Book Now</a></p>
-                    <p><a href="https://wa.me/919876543210">WhatsApp</a></p>
-                    <p><a href="/gallery">Photo Gallery</a></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Nearby Attractions</h3>
-                    <p>🏔️ Paithalmala - 15km</p>
-                    <p>🌾 Palakkayam Thattu - 12km</p>
-                    <p>💧 Kuttippullu Falls - 20km</p>
-                    <p>✈️ Kannur Airport - 40km</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <p>Stay updated with the latest from our homestay and local attractions!</p>
-                    <p>🌟 Direct booking = Best rates</p>
-                </div>
+            <div class="footer-address">
+                <strong>Thushara Homestay</strong><br>
+                Karuvanchal - Velladu Road<br>
+                Kerala, India 670571
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Thushara Homestay - Your Gateway to Kannur Hills. All rights reserved.</p>
-            </div>
+            <p class="footer-note">
+                Please contact us before visiting to ensure availability
+            </p>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for anchor links
+        // Simple smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -580,18 +405,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(44, 85, 48, 0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.background = 'linear-gradient(135deg, #2c5530, #4a7c59)';
-                header.style.backdropFilter = 'none';
-            }
         });
     </script>
 </body>
