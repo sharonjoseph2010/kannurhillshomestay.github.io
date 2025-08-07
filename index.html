@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thushara Homestay | Your Gateway to Kannur Hills</title>
-    <meta name="description" content="Experience authentic Kerala hills at Thushara Homestay, Velladu. Perfect base for Paithalmala, Palakkayam Thattu & Kuttippullu. Includes traditional meals from our family restaurant.">
+    <title>Thushara Homestay | Hill Station Stay</title>
+    <meta name="description" content="Experience authentic Kerala hill life at Thushara Homestay. Perfect base for Paithalmala, Palakkayam Thattu & Kuttippullu. Traditional meals from Vanitha Hotel.">
     <style>
         * {
             margin: 0;
@@ -13,398 +13,580 @@
         }
         
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            line-height: 1.7;
-            color: #2c2c2c;
-            background-color: #fefefe;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #4a4a4a;
+            background-color: #c8d4a6;
         }
         
-        .container {
-            max-width: 800px;
+        /* Header Navigation */
+        .header-nav {
+            background: #ffffff;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
         }
         
-        /* Header */
-        header {
-            background: #fff;
-            padding: 30px 0;
-            border-bottom: 1px solid #e8e8e8;
-            text-align: center;
+        .logo {
+            display: flex;
+            align-items: center;
         }
         
-        .logo h1 {
-            font-size: 2.2rem;
-            color: #2d5016;
-            font-weight: normal;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background: #c8d4a6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #4a4a4a;
         }
         
-        .tagline {
-            color: #666;
-            font-size: 1.1rem;
-            font-style: italic;
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links .active {
+            color: #8db373;
+            font-weight: bold;
         }
         
         /* Main Content */
         .main-content {
-            padding: 60px 0;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #c8d4a6;
         }
         
-        .section {
-            margin-bottom: 80px;
+        .hill-stay-header {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 48px;
+            color: #5a6b3d;
+            margin-bottom: 30px;
+            text-align: left;
         }
         
-        .section h2 {
-            font-size: 1.8rem;
-            color: #2d5016;
-            margin-bottom: 25px;
-            font-weight: normal;
+        .content-section {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 50px;
+            align-items: flex-start;
         }
         
-        .intro-text {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 40px;
-            text-align: center;
-            font-style: italic;
+        .text-content {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 30px;
+            border-radius: 0;
         }
         
-        /* What's Included Section */
-        .included-list {
-            background: #f9f9f7;
-            padding: 40px;
-            border-left: 4px solid #2d5016;
-            margin: 30px 0;
-        }
-        
-        .included-list h3 {
-            color: #2d5016;
+        .text-content p {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.7;
             margin-bottom: 20px;
-            font-size: 1.3rem;
         }
         
-        .included-list ul {
+        .includes-list {
+            margin-top: 20px;
+        }
+        
+        .includes-list h4 {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .includes-list ul {
             list-style: none;
+            padding: 0;
         }
         
-        .included-list li {
-            margin-bottom: 12px;
-            padding-left: 20px;
+        .includes-list li {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 8px;
+            padding-left: 15px;
             position: relative;
         }
         
-        .included-list li:before {
-            content: "–";
+        .includes-list li:before {
+            content: "•";
             position: absolute;
             left: 0;
-            color: #2d5016;
+            color: #5a6b3d;
             font-weight: bold;
         }
         
-        /* Location Benefits */
-        .location-info {
-            background: #fff;
-            border: 1px solid #e8e8e8;
-            padding: 30px;
-            margin: 30px 0;
-        }
-        
-        .attractions-list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .attraction {
-            padding: 15px;
-            background: #f9f9f7;
-        }
-        
-        .attraction h4 {
-            color: #2d5016;
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-        }
-        
-        .attraction .distance {
-            color: #888;
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-        
-        /* Simple Gallery */
-        .photo-gallery {
-            margin: 40px 0;
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .gallery-item {
-            height: 160px;
-            background: #f0f0f0;
-            border: 1px solid #e0e0e0;
+        .image-placeholder {
+            width: 300px;
+            height: 200px;
+            background: #a8b888;
+            border: 2px solid #8db373;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #888;
+            color: #5a6b3d;
             font-style: italic;
-            font-size: 0.9rem;
+            flex-shrink: 0;
         }
         
-        /* Pricing */
-        .pricing {
-            background: #2d5016;
-            color: white;
-            padding: 40px;
+        .additional-info {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px 30px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+        
+        .additional-info a {
+            color: #5a6b3d;
+            text-decoration: none;
+        }
+        
+        /* Testimonials Section */
+        .testimonials-header {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36px;
+            color: #5a6b3d;
             text-align: center;
-            margin: 40px 0;
+            margin-bottom: 30px;
         }
         
-        .pricing h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            font-weight: normal;
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 50px;
         }
         
-        .price {
-            font-size: 2rem;
-            margin-bottom: 10px;
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .testimonial-name {
             font-weight: bold;
+            color: #5a6b3d;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        /* Pricing Table */
+        .pricing-header {
+            font-size: 18px;
+            color: #5a6b3d;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .pricing-table {
+            background: rgba(255, 255, 255, 0.6);
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-table th,
+        .pricing-table td {
+            border: 1px solid #8db373;
+            padding: 12px 20px;
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .pricing-table th {
+            background: #8db373;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .pricing-table td {
+            background: rgba(255, 255, 255, 0.8);
+            color: #4a4a4a;
         }
         
         .pricing-note {
-            font-size: 0.9rem;
-            opacity: 0.9;
+            font-size: 13px;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            font-style: italic;
         }
         
-        /* Contact & Booking */
-        .contact-section {
-            text-align: center;
-            padding: 40px 0;
+        .booking-terms {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px 30px;
+            margin-bottom: 40px;
+            font-size: 13px;
+            color: #4a4a4a;
+            line-height: 1.6;
         }
         
-        .contact-methods {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        .contact-method {
-            padding: 25px;
-            border: 1px solid #e8e8e8;
-        }
-        
-        .contact-method h4 {
-            color: #2d5016;
-            margin-bottom: 15px;
-        }
-        
-        .contact-method a {
-            color: #2d5016;
-            text-decoration: none;
+        /* Booking Form */
+        .booking-header {
+            font-size: 18px;
+            color: #5a6b3d;
+            margin-bottom: 30px;
             font-weight: bold;
         }
         
-        .contact-method a:hover {
-            text-decoration: underline;
+        .booking-form {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 30px;
         }
         
-        /* Footer */
-        footer {
-            background: #f9f9f7;
-            padding: 40px 0;
-            text-align: center;
-            border-top: 1px solid #e8e8e8;
-            color: #666;
-        }
-        
-        .footer-address {
+        .form-row {
+            display: flex;
+            gap: 20px;
             margin-bottom: 20px;
         }
         
+        .form-group {
+            flex: 1;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #8db373;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .form-question {
+            color: #4a4a4a;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        .radio-group {
+            margin-bottom: 20px;
+        }
+        
+        .radio-group label {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        
+        .submit-btn {
+            background: #5a6b3d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .submit-btn:hover {
+            background: #4a5a32;
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-address {
+            color: #4a4a4a;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .footer-contact {
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-contact a {
+            color: #5a6b3d;
+            text-decoration: none;
+        }
+        
         .footer-note {
+            color: #4a4a4a;
+            font-size: 13px;
             font-style: italic;
-            font-size: 0.9rem;
-            color: #888;
+            margin-bottom: 30px;
         }
         
         /* Mobile Responsive */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 20px;
+            .nav-links {
+                display: none;
             }
             
-            .logo h1 {
-                font-size: 1.8rem;
+            .content-section {
+                flex-direction: column;
             }
             
-            .attractions-list {
+            .image-placeholder {
+                width: 100%;
+                height: 200px;
+            }
+            
+            .testimonials-grid {
                 grid-template-columns: 1fr;
             }
             
-            .gallery-grid {
-                grid-template-columns: 1fr 1fr;
+            .form-row {
+                flex-direction: column;
             }
             
-            .main-content {
-                padding: 40px 0;
-            }
-            
-            .section {
-                margin-bottom: 60px;
+            .hill-stay-header {
+                font-size: 36px;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
             <div class="logo">
-                <h1>Thushara Homestay</h1>
-                <p class="tagline">Experience the authentic Kerala hills</p>
+                <div style="width: 40px; height: 40px; background: #c8d4a6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #4a4a4a; margin-right: 10px;">T</div>
+                <span style="font-weight: bold; color: #4a4a4a;">Thushara</span>
             </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#attractions">ATTRACTIONS</a></li>
+                    <li><a href="#booking">BOOKING</a></li>
+                    <li><a href="#contact" class="active">HILL STAY</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="main-content">
-        <div class="container">
-            
-            <!-- Introduction -->
-            <section class="section">
-                <p class="intro-text">
-                    Get a taste of authentic Kerala hill life! Stay in our comfortable 1BHK homestay, 
-                    enjoy fresh meals from Vanitha Hotel (women-run restaurant attached to our homestay), and explore the stunning Western Ghats from your doorstep.
-                </p>
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Hill Stay Header -->
+        <h1 class="hill-stay-header">Hill Stay</h1>
+        
+        <!-- Main Content Section -->
+        <div class="content-section">
+            <div class="text-content">
+                <p>Get a taste of authentic Kerala hill life! Book yourself a Hill Stay at Thushara Homestay! Live in an independent 1BHK cottage with AC, enjoy traditional meals from Vanitha Hotel (women's group restaurant), explore scenic attractions, and soak in the beauty of the Western Ghats!</p>
                 
-                <div class="included-list">
-                    <h3>Your stay includes:</h3>
+                <div class="includes-list">
+                    <h4>The stay includes:</h4>
                     <ul>
                         <li>Independent 1BHK with AC, living room, kitchenette and private bathroom</li>
-                        <li>Comfortable accommodation for up to 2 adults</li>
-                        <li>Traditional Kerala meals available from Vanitha Hotel (women's group restaurant) attached to homestay</li>
-                        <li>Free parking in safe, prime residential area</li>
-                        <li>Local guidance for hill station exploration</li>
-                        <li>Easy access to all major Kannur hill attractions</li>
+                        <li>Comfortable beds (we can accommodate maximum of 2 adults)</li>
+                        <li>Traditional Kerala meals from Vanitha Hotel (attached women's group restaurant)</li>
+                        <li>Free parking in safe residential area</li>
+                        <li>Easy access to all hill attractions</li>
                     </ul>
                 </div>
-            </section>
-
-            <!-- Location Benefits -->
-            <section class="section">
-                <h2>Perfect Base for Hill Station Exploration</h2>
-                <div class="location-info">
-                    <p>Located on Karuvanchal - Velladu Road, we're strategically positioned in a safe, calm residential area with easy access to all major attractions in the Kannur hills region.</p>
-                    
-                    <div class="attractions-list">
-                        <div class="attraction">
-                            <h4>Paithalmala</h4>
-                            <p class="distance">15 km - Sunrise views & trekking</p>
-                        </div>
-                        <div class="attraction">
-                            <h4>Palakkayam Thattu</h4>
-                            <p class="distance">8 km - Grassland plateau at 3500ft</p>
-                        </div>
-                        <div class="attraction">
-                            <h4>Kuttippullu</h4>
-                            <p class="distance">8 km - Hidden waterfalls</p>
-                        </div>
-                        <div class="attraction">
-                            <h4>Kannur Airport</h4>
-                            <p class="distance">40 km - Easy connectivity</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Simple Photo Gallery -->
-            <section class="section photo-gallery">
-                <h2>A Glimpse of Our Homestay</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">Comfortable AC Bedroom</div>
-                    <div class="gallery-item">Living Area & Kitchenette</div>
-                    <div class="gallery-item">Vanitha Hotel Restaurant</div>
-                    <div class="gallery-item">Kerala Cuisine</div>
-                    <div class="gallery-item">Mountain Views</div>
-                    <div class="gallery-item">Local Attractions</div>
-                </div>
-                <p style="text-align: center; margin-top: 20px; color: #666; font-style: italic;">
-                    More photos available upon request via WhatsApp
-                </p>
-            </section>
-
-            <!-- Pricing -->
-            <div class="pricing">
-                <h3>Simple, Transparent Pricing</h3>
-                <div class="price">₹2,000</div>
-                <p class="pricing-note">Per night for 2 people | Meals available separately</p>
             </div>
-
-            <!-- Contact & Booking -->
-            <section class="section contact-section">
-                <h2>Ready to Experience Kerala Hills?</h2>
-                <p>Book directly with us for personalized service and local insights.</p>
-                
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <h4>WhatsApp Booking</h4>
-                        <a href="https://wa.me/918330094302?text=Hi! I'd like to book Thushara Homestay for exploring Kannur hills">
-                            Message Us: +91 83300 94302
-                        </a>
-                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
-                            Quick response & easy booking
-                        </p>
-                    </div>
-                    <div class="contact-method">
-                        <h4>Call Direct</h4>
-                        <a href="tel:+918330094302">+91 83300 94302</a>
-                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
-                            Speak with family directly
-                        </p>
-                    </div>
-                    <div class="contact-method">
-                        <h4>Email Inquiry</h4>
-                        <a href="mailto:info@kannurhillshomestay.com">info@kannurhillshomestay.com</a>
-                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">
-                            Detailed information & planning
-                        </p>
-                    </div>
-                </div>
-            </section>
-
+            <div class="image-placeholder">
+                Homestay Interior Photo
+            </div>
         </div>
-    </main>
 
-    <footer>
-        <div class="container">
+        <!-- Additional Gallery Placeholders -->
+        <div style="display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap;">
+            <div style="width: 120px; height: 80px; background: #a8b888; border: 1px solid #8db373; display: flex; align-items: center; justify-content: center; color: #5a6b3d; font-size: 11px; text-align: center;">Room View</div>
+            <div style="width: 120px; height: 80px; background: #a8b888; border: 1px solid #8db373; display: flex; align-items: center; justify-content: center; color: #5a6b3d; font-size: 11px; text-align: center;">Vanitha Hotel</div>
+            <div style="width: 120px; height: 80px; background: #a8b888; border: 1px solid #8db373; display: flex; align-items: center; justify-content: center; color: #5a6b3d; font-size: 11px; text-align: center;">Hill Views</div>
+            <div style="width: 120px; height: 80px; background: #a8b888; border: 1px solid #8db373; display: flex; align-items: center; justify-content: center; color: #5a6b3d; font-size: 11px; text-align: center;">Kerala Food</div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="additional-info">
+            If you would like to visit <a href="#paithalmala">Paithalmala Hill Station</a> or take a <a href="#palakkayam">Palakkayam Thattu tour</a> during your stay at Thushara Homestay, we can help arrange transportation. Please ensure to plan your hill station visits by checking weather conditions <a href="#weather">here</a>.
+        </div>
+
+        <!-- Testimonials Section -->
+        <h2 class="testimonials-header">What People Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-name">Priya Nair</div>
+                <div class="testimonial-text">"The joy of experiencing authentic Kerala hill life and the meals from Vanitha Hotel will stay with us for a very long time. Thanks so much for the amazing hospitality"</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-name">Ravi Kumar</div>
+                <div class="testimonial-text">"Thushara Homestay, perfect location for exploring Paithalmala and Palakkayam Thattu is sheer bliss. We are coming back soon!"</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-name">Anjali Shah</div>
+                <div class="testimonial-text">"It is difficult to express the gratitude for the warm hospitality and local guidance. We loved every bit of this hill station experience"</div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <h3 class="pricing-header">Tariff plan</h3>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Per Night (2 people)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weekdays</td>
+                    <td>₹2000</td>
+                </tr>
+                <tr>
+                    <td>Weekends</td>
+                    <td>₹2200</td>
+                </tr>
+                <tr>
+                    <td>Extra Bed Charges</td>
+                    <td>₹500 per night</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pricing-note">*Meals from Vanitha Hotel available at additional cost</div>
+
+        <!-- Booking Terms -->
+        <div class="booking-terms">
+            Booking is confirmed on receipt of advance payment.<br>
+            Cancellation > 7 days prior to check-in date: 80% of amount will be refunded<br>
+            Cancellation > 3 days prior to check-in date: 50% of amount will be refunded<br>
+            Cancellation < 3 days prior to check-in date: No refund provided
+        </div>
+
+        <!-- Booking Form -->
+        <h3 class="booking-header">Request a Booking</h3>
+        <div class="booking-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="City/State" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="date" placeholder="Check In">
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Check Out">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <select>
+                        <option>No of Guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-question">Please introduce yourself in detail. What you share about yourself will help us decide whether we would like to accept your booking request. *</div>
+            <textarea placeholder="Tell us about yourself..."></textarea>
+            
+            <div class="form-question">What do you know about Thushara Homestay? Why do you want to book a hill stay here? What are your expectations? *</div>
+            <textarea placeholder="Share your thoughts about our homestay..."></textarea>
+            
+            <div class="form-question">What makes you interesting company? What can we learn from you? What ideas can we exchange? *</div>
+            <textarea placeholder="What makes you special as a guest..."></textarea>
+            
+            <div class="form-question">Our dogs Lala, Vicky, Sheru and Benji love to interact with our guests. Are you happy in the company of dogs? *</div>
+            <div class="radio-group">
+                <label><input type="radio" name="dogs" value="yes"> Yes</label>
+                <label><input type="radio" name="dogs" value="no"> No</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
             <div class="footer-address">
                 <strong>Thushara Homestay</strong><br>
-                Karuvanchal - Velladu Road<br>
+                Karuvanchal - Velladu Road,<br>
                 Kerala, India 670571
             </div>
-            <p class="footer-note">
-                Please contact us before visiting to ensure availability
-            </p>
+            <div class="footer-contact">
+                Email: <a href="mailto:info@kannurhillshomestay.com">info@kannurhillshomestay.com</a><br>
+                WhatsApp: <a href="https://wa.me/918330094302">+91 83300 94302</a>
+            </div>
+            <div class="footer-note">
+                Please do not visit Thushara Homestay without a prior booking. You will have to return disappointed.
+            </div>
         </div>
     </footer>
 
     <script>
-        // Simple smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // Simple form handling
+        document.querySelector('.submit-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Thank you for your booking request! We will contact you within 24 hours via WhatsApp.');
         });
     </script>
 </body>
