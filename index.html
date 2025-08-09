@@ -91,12 +91,14 @@
         }
         
         .hero-title {
-            font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+            font-family: 'Arial', sans-serif;
             font-size: 52px;
             color: #5e731e;
             margin-bottom: 30px;
-            text-align: left;
-            font-weight: normal;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .hero-subtitle {
@@ -437,7 +439,45 @@
             line-height: 1.7;
         }
         
-        /* WhatsApp Booking Section */
+        /* Location Map Section */
+        .location-section {
+            background: #f3f4ec;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .location-header {
+            font-size: 24px;
+            color: #2d3e1f;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .location-description {
+            color: #5e731e;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
         .whatsapp-booking {
             background: #f3f4ec;
             padding: 40px;
@@ -605,7 +645,27 @@
                 margin-bottom: 6px;
             }
             
-            .pricing-section,
+            .location-section {
+                padding: 25px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .location-header {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .map-container {
+                height: 300px;
+            }
+            
+            .location-section {
+                padding: 20px 15px;
+            }
+            
+            .map-container {
+                height: 250px;
+            }
             .whatsapp-booking {
                 padding: 25px 20px;
                 margin-bottom: 30px;
@@ -791,6 +851,21 @@
             <div class="booking-terms">
                 <strong>Booking Terms:</strong><br>
                 Booking confirmed on advance payment • Cancellation > 7 days: 80% refund • Cancellation > 3 days: 50% refund • Cancellation < 3 days: No refund
+            </div>
+        </div>
+
+        <!-- Location Map Section -->
+        <div class="location-section">
+            <h3 class="location-header">Find Us on the Map</h3>
+            <p class="location-description">Located in the scenic hills of Velladu, our homestay offers easy access to popular attractions while maintaining the tranquility of mountain life.</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5073.320777132376!2d75.47289838675535!3d12.166062784878234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4456a09b981c5%3A0x39f2052c1342c38!2sThushara%20Homestay!5e1!3m2!1sen!2sin!4v1754718597456!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Thushara Homestay Location">
+                </iframe>
             </div>
         </div>
 
